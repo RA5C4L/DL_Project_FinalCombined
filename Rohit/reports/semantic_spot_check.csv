@@ -1,0 +1,10 @@
+condition,id,label,sentiment_preserved,grammar_acceptable,reviewer_notes
+synonym_0.05,imdb:test:22981,1,yes,yes,AI-assisted spot check: overall praise remains; childish/infantile and really/truly/genuinely retain the apparent stance. Not a contextual semantic guarantee.
+synonym_0.1,imdb:test:22981,1,yes,yes,AI-assisted spot check: overall praise remains; childish/infantile and really/truly/genuinely retain the apparent stance. Not a contextual semantic guarantee.
+synonym_0.2,imdb:test:22981,1,yes,yes,AI-assisted spot check: overall praise remains; childish/infantile and really/truly/genuinely retain the apparent stance. Not a contextual semantic guarantee.
+typo_0.05,imdb:test:8024,0,yes,yes,AI-assisted spot check: clear negative assessment remains readable despite intentional spelling noise; grammar structure is retained.
+typo_0.1,imdb:test:8024,0,yes,yes,AI-assisted spot check: clear negative assessment remains readable despite intentional spelling noise; grammar structure is retained.
+typo_0.2,imdb:test:8024,0,yes,yes,AI-assisted spot check: clear negative assessment remains readable despite intentional spelling noise; grammar structure is retained.
+deletion_0.05,imdb:test:19349,1,yes,yes,AI-assisted spot check: praise remains; removed movie and surprising weaken detail without reversing overall sentiment.
+deletion_0.1,imdb:test:19349,1,yes,no,"AI-assisted spot check: praise remains, but missing story/wrong/twists/plot creates fragments and loses content."
+deletion_0.2,imdb:test:19349,1,uncertain,no,AI-assisted spot check: some positive cues remain but much of the evaluation and sentence structure is removed; unsuitable as a confidently meaning-preserving attack.

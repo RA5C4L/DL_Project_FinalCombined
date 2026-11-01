@@ -1,0 +1,28 @@
+{
+  "tests_passed": 14,
+  "test_command": "python -m pytest -q",
+  "test_environment": "Python 3.9.6 / PyTorch 2.8.0 / macOS arm64 CPU",
+  "warnings": "14 third-party Matplotlib/Pyparsing deprecation warnings; no test failures",
+  "coverage": [
+    "training-only vocabulary and padding",
+    "stratified split isolation and reproducibility",
+    "CNN shapes, gradients and padding invariance",
+    "metric edge cases",
+    "deterministic perturbations and protected words",
+    "checkpoint reload and inference",
+    "evaluation leakage and overwrite guards",
+    "robustness checksum and ordered ID checks",
+    "report export and duplicate-text disclosure"
+  ],
+  "final_review_date": "2026-10-31",
+  "evaluation_conditions_recomputed_from_predictions": 11,
+  "review_instances_verified": 288000,
+  "same_checkpoint_all_conditions": true,
+  "plots_visually_checked": [
+    "training_curves.png",
+    "clean_confusion_matrix.png",
+    "ood_confusion_matrix.png",
+    "robustness.png"
+  ],
+  "error_analysis_reproduced": true
+}
