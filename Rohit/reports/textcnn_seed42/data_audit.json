@@ -1,0 +1,62 @@
+{
+  "train": {
+    "n": 20000,
+    "negative": 10000,
+    "positive": 10000,
+    "truncated_count": 3500,
+    "empty_count": 0,
+    "oov_fraction_before_truncation": 0.012398069500507586,
+    "duplicate_cleaned_text_count": 60
+  },
+  "validation": {
+    "n": 5000,
+    "negative": 2500,
+    "positive": 2500,
+    "truncated_count": 919,
+    "empty_count": 0,
+    "oov_fraction_before_truncation": 0.016140856046546952,
+    "duplicate_cleaned_text_count": 3
+  },
+  "test": {
+    "n": 25000,
+    "negative": 12500,
+    "positive": 12500,
+    "truncated_count": 4187,
+    "empty_count": 0,
+    "oov_fraction_before_truncation": 0.019857616173594952,
+    "duplicate_cleaned_text_count": 201
+  },
+  "ood": {
+    "n": 38000,
+    "negative": 19000,
+    "positive": 19000,
+    "truncated_count": 2555,
+    "empty_count": 0,
+    "oov_fraction_before_truncation": 0.044494998373881385,
+    "duplicate_cleaned_text_count": 0
+  },
+  "exact_cleaned_text_overlap": {
+    "train_vs_validation": 35,
+    "train_vs_test": 99,
+    "validation_vs_test": 24
+  },
+  "test_excluding_development_text_matches": {
+    "excluded_count": 123,
+    "purpose": "Descriptive sensitivity check only; official full test score remains primary",
+    "accuracy": 0.8704827752542509,
+    "precision_macro": 0.8735048554473062,
+    "recall_macro": 0.8703618798571517,
+    "f1_macro": 0.8701931894958128,
+    "confusion_matrix": [
+      [
+        10240,
+        2165
+      ],
+      [
+        1057,
+        11415
+      ]
+    ],
+    "n": 24877
+  }
+}

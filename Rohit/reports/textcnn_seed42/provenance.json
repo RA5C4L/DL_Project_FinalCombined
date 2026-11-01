@@ -1,0 +1,14 @@
+{
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "numpy": "2.0.2",
+  "device": "cpu",
+  "train_count": 20000,
+  "validation_count": 5000,
+  "parameter_count": 4037762,
+  "train_sha256": "25fabe476a91db73fee1d50173fa24aa7a353022a9213a95f7f9a759e4d9d3e0",
+  "validation_sha256": "243748469e35c3d438481beee62b30b4c0c932886f844b9c0c7cc3212ce6077a",
+  "config_sha256": "f9cb041dbd9c4bccc3ecdc634883ec07f75b6087a558f843e81b1770571b0069",
+  "selection_rule": "lowest validation cross entropy",
+  "determinism": "Fixed seeds; device kernels can still differ; deterministic algorithms warn_only=True"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.6472754418373108,
+    "validation_loss": 0.4538390184402466,
+    "validation_accuracy": 0.8036,
+    "validation_f1_macro": 0.8034036867854766,
+    "elapsed_seconds": 185.012754541
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.4904651327133179,
+    "validation_loss": 0.38378430948257447,
+    "validation_accuracy": 0.8384,
+    "validation_f1_macro": 0.8381144338613313,
+    "elapsed_seconds": 383.628093041
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.41960770478248594,
+    "validation_loss": 0.3314275186538696,
+    "validation_accuracy": 0.8608,
+    "validation_f1_macro": 0.8607860786078607,
+    "elapsed_seconds": 590.4331832500001
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.355169678401947,
+    "validation_loss": 0.3150582668542862,
+    "validation_accuracy": 0.8624,
+    "validation_f1_macro": 0.8618411529901993,
+    "elapsed_seconds": 831.967738166
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.2908380726337433,
+    "validation_loss": 0.33311218485832217,
+    "validation_accuracy": 0.8574,
+    "validation_f1_macro": 0.8563720316500445,
+    "elapsed_seconds": 1041.58469325
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.2310836369752884,
+    "validation_loss": 0.30931946765184404,
+    "validation_accuracy": 0.873,
+    "validation_f1_macro": 0.8726993208879645,
+    "elapsed_seconds": 1248.806018875
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.18173464959859847,
+    "validation_loss": 0.3332495730161667,
+    "validation_accuracy": 0.8686,
+    "validation_f1_macro": 0.8681284219620733,
+    "elapsed_seconds": 1459.5998529160001
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.12919782419204712,
+    "validation_loss": 0.33081668965816496,
+    "validation_accuracy": 0.8756,
+    "validation_f1_macro": 0.8755949043672828,
+    "elapsed_seconds": 1660.162801875
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.09380724003016949,
+    "validation_loss": 0.3780073343515396,
+    "validation_accuracy": 0.8714,
+    "validation_f1_macro": 0.8713998713998714,
+    "elapsed_seconds": 1866.571357625
+  }
+]

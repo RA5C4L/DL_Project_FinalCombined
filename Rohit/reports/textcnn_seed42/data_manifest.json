@@ -1,0 +1,22 @@
+{
+  "seed": 42,
+  "label_mapping": {
+    "0": "negative",
+    "1": "positive"
+  },
+  "train_count": 20000,
+  "validation_count": 5000,
+  "test_count": 25000,
+  "ood": {
+    "dataset": "fancyzhx/yelp_polarity",
+    "split": "test",
+    "count": 38000,
+    "fingerprint": "6b88d6ae2fccc7f2"
+  },
+  "sha256": {
+    "ood.jsonl": "573d8a723e1626129ddbf818a6eb96ad932821e13293abbed106bd941ccb45af",
+    "test.jsonl": "392b7b8190045e9a09ab0ed6ba8588c985804a2d73e28da979babbc8a9955f48",
+    "train.jsonl": "25fabe476a91db73fee1d50173fa24aa7a353022a9213a95f7f9a759e4d9d3e0",
+    "validation.jsonl": "243748469e35c3d438481beee62b30b4c0c932886f844b9c0c7cc3212ce6077a"
+  }
+}

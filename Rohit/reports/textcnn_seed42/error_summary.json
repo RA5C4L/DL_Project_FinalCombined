@@ -1,0 +1,44 @@
+{
+  "clean": {
+    "by_original_token_length": {
+      "up_to_100_tokens": {
+        "n": 2412,
+        "correct": 2117,
+        "accuracy": 0.8776948590381426
+      },
+      "101_to_400_tokens": {
+        "n": 18401,
+        "correct": 16179,
+        "accuracy": 0.8792456931688495
+      },
+      "over_400_tokens": {
+        "n": 4187,
+        "correct": 3473,
+        "accuracy": 0.8294721757821829
+      }
+    },
+    "false_positive_count": 2174,
+    "false_negative_count": 1057
+  },
+  "ood": {
+    "by_original_token_length": {
+      "up_to_100_tokens": {
+        "n": 16667,
+        "correct": 13381,
+        "accuracy": 0.8028439431211376
+      },
+      "101_to_400_tokens": {
+        "n": 18778,
+        "correct": 15031,
+        "accuracy": 0.8004579827457663
+      },
+      "over_400_tokens": {
+        "n": 2555,
+        "correct": 1973,
+        "accuracy": 0.772211350293542
+      }
+    },
+    "false_positive_count": 5221,
+    "false_negative_count": 2394
+  }
+}
