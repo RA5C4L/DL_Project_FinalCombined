@@ -1,0 +1,16 @@
+{
+  "test": {
+    "n": 25000,
+    "tokens_include_special_tokens": true,
+    "median_tokens": 219.0,
+    "p95_tokens": 743.0,
+    "fraction_truncated_at_256": 0.40108
+  },
+  "amazon": {
+    "n": 25000,
+    "tokens_include_special_tokens": true,
+    "median_tokens": 90.0,
+    "p95_tokens": 208.0,
+    "fraction_truncated_at_256": 0.002
+  }
+}

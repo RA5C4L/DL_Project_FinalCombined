@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "split_hash": "b2aff130e76f84ad088d273a2d4ed30cc7477ae7b9a52fc51f94d428a1667265",
+  "counts": {
+    "train": 20000,
+    "validation": 5000,
+    "test": 25000,
+    "amazon": 25000
+  },
+  "conditions_checked": [
+    "synonym_0.05",
+    "synonym_0.1",
+    "synonym_0.2",
+    "typo_0.05",
+    "typo_0.1",
+    "typo_0.2",
+    "deletion_0.05",
+    "deletion_0.1",
+    "deletion_0.2"
+  ],
+  "semantic_preservation": "Not established by structural verification; review manual_review.csv"
+}

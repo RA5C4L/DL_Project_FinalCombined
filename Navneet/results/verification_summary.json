@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "conditions": 11,
+  "prediction_rows_checked": 275000,
+  "checks": [
+    "unique IDs",
+    "prediction probability range",
+    "independent confusion matrix",
+    "independent accuracy and macro F1",
+    "CSV/JSON agreement",
+    "percentage-point accuracy drops",
+    "source and model SHA-256 capture"
+  ],
+  "unit_and_integration_tests": "13 passed; latest pytest run completed in 11.90 seconds",
+  "dependency_check": "pip check: No broken requirements found",
+  "manual_semantic_review": "pending human review; not established by these checks"
+}
