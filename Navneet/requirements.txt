@@ -1,0 +1,10 @@
+torch==2.8.0
+transformers==4.57.1
+datasets==4.3.0
+accelerate==1.11.0
+scikit-learn==1.7.2
+numpy==2.2.6
+nltk==3.9.2
+nlpaug==1.1.11
+matplotlib==3.10.7
+pytest==8.4.2

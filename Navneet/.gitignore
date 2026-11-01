@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.cache/
+data/prepared/
+data/perturbed/
+models/
+runs/
+references/*.docx
+*.log
+.env
+.ipynb_checkpoints/
