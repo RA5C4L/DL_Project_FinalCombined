@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rohit-dl-project"
+version = "0.1.0"
+description = "TextCNN sentiment classification and robustness evaluation for ICT 4442"
+authors = [{name = "Rohit Mohanty"}]
+requires-python = ">=3.9"
+dependencies = ["torch>=2.2,<3", "numpy>=1.26,<3", "scikit-learn>=1.4,<2", "datasets>=2.18,<5", "matplotlib>=3.8,<4", "nltk>=3.8,<4", "nlpaug==1.1.11"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+rohit-dl = "rohit_dl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
