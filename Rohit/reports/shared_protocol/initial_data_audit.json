@@ -1,0 +1,31 @@
+{
+  "train": {
+    "n": 20000,
+    "negative": 10000,
+    "positive": 10000,
+    "duplicate_text_count": 60
+  },
+  "validation": {
+    "n": 5000,
+    "negative": 2500,
+    "positive": 2500,
+    "duplicate_text_count": 3
+  },
+  "test": {
+    "n": 25000,
+    "negative": 12500,
+    "positive": 12500,
+    "duplicate_text_count": 201
+  },
+  "ood": {
+    "n": 38000,
+    "negative": 19000,
+    "positive": 19000,
+    "duplicate_text_count": 0
+  },
+  "exact_text_overlap": {
+    "train_vs_validation": 35,
+    "train_vs_test": 99,
+    "validation_vs_test": 24
+  }
+}

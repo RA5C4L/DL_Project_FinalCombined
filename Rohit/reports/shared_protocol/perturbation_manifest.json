@@ -1,0 +1,72 @@
+{
+  "source_sha256": "392b7b8190045e9a09ab0ed6ba8588c985804a2d73e28da979babbc8a9955f48",
+  "seed": 42,
+  "n": 25000,
+  "method": "nlpaug WordNet backend; contextual base adjective/adverb POS; first sense; internal character swap; random word deletion; protected short/function/name tokens",
+  "claim": "Model-independent perturbations; semantic preservation requires human review",
+  "sets": [
+    {
+      "name": "synonym_0.05",
+      "path": "synonym_0.05.jsonl",
+      "sha256": "6f725ef721a8197c74b5fbdc60aa6de2fcc87fb34996f1d422cda2f68e727fab",
+      "mean_realized_rate": 0.03734538344036112,
+      "unchanged_count": 285
+    },
+    {
+      "name": "synonym_0.1",
+      "path": "synonym_0.1.jsonl",
+      "sha256": "68aa91df3109ee5d1e55209a2674be27cc18e2a5e46c3dda7b74b4a2f00b49f6",
+      "mean_realized_rate": 0.043421028596052555,
+      "unchanged_count": 279
+    },
+    {
+      "name": "synonym_0.2",
+      "path": "synonym_0.2.jsonl",
+      "sha256": "909237b228e7ae324f6718388a34de56a12231a720387d004b1677ef4964288a",
+      "mean_realized_rate": 0.04366102728767123,
+      "unchanged_count": 278
+    },
+    {
+      "name": "typo_0.05",
+      "path": "typo_0.05.jsonl",
+      "sha256": "95d57bd58c1aeef9fe47ca7ced5298feac9929b7636e6a78406cd5d9eeb5c1b3",
+      "mean_realized_rate": 0.046849720207287844,
+      "unchanged_count": 20
+    },
+    {
+      "name": "typo_0.1",
+      "path": "typo_0.1.jsonl",
+      "sha256": "12c0043476375d01199117c1e580dc91b4ced05cbc43f0e5278e00b8a8456de4",
+      "mean_realized_rate": 0.0969893639984162,
+      "unchanged_count": 10
+    },
+    {
+      "name": "typo_0.2",
+      "path": "typo_0.2.jsonl",
+      "sha256": "acc73f7169ff6a8e8c153752d149900c0dc09c3404a161b7997072c4ca0a8dc3",
+      "mean_realized_rate": 0.19720282642866355,
+      "unchanged_count": 6
+    },
+    {
+      "name": "deletion_0.05",
+      "path": "deletion_0.05.jsonl",
+      "sha256": "317296a68b2f431175dfe837fad6468ededd87b5233bf0a2984fbeccea8f56af",
+      "mean_realized_rate": 0.046849720207287844,
+      "unchanged_count": 20
+    },
+    {
+      "name": "deletion_0.1",
+      "path": "deletion_0.1.jsonl",
+      "sha256": "ccb48f2ba76cf862aaf86cec58c36f064b2898d30fece2a5deded85207b1b88b",
+      "mean_realized_rate": 0.09698961877548627,
+      "unchanged_count": 10
+    },
+    {
+      "name": "deletion_0.2",
+      "path": "deletion_0.2.jsonl",
+      "sha256": "fe9d18131863470f77403a98b32d0322db55eb661070937c811524eeda0b2f49",
+      "mean_realized_rate": 0.19721682989811365,
+      "unchanged_count": 6
+    }
+  ]
+}
