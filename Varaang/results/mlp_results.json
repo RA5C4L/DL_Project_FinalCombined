@@ -1,0 +1,118 @@
+{
+  "model": "MLP + TF-IDF",
+  "owner": "Varaang Tiwari (230953378)",
+  "seed": 42,
+  "config": {
+    "tfidf": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 30000,
+      "min_df": 2,
+      "max_df": 0.95,
+      "sublinear_tf": true,
+      "actual_dim": 30000
+    },
+    "hidden_units": 256,
+    "dropout": 0.5,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "batch_size": 128,
+    "patience": 3
+  },
+  "epochs_run": 5,
+  "best_val_loss": 0.21918390691280365,
+  "train_time_sec": 117.5,
+  "n_params": 7680513,
+  "val": {
+    "accuracy": 0.9108,
+    "precision_macro": 0.9109051917290827,
+    "recall_macro": 0.9108,
+    "f1_macro": 0.9107942908346134,
+    "precision_per_class": [
+      0.917479674796748,
+      0.9043307086614173
+    ],
+    "recall_per_class": [
+      0.9028,
+      0.9188
+    ],
+    "f1_per_class": [
+      0.9100806451612903,
+      0.9115079365079365
+    ],
+    "confusion_matrix": [
+      [
+        2257,
+        243
+      ],
+      [
+        203,
+        2297
+      ]
+    ],
+    "n_samples": 5000
+  },
+  "test": {
+    "accuracy": 0.90312,
+    "precision_macro": 0.9032191364246073,
+    "recall_macro": 0.9031199999999999,
+    "f1_macro": 0.9031140448466349,
+    "precision_per_class": [
+      0.9095416124837451,
+      0.8968966603654694
+    ],
+    "recall_per_class": [
+      0.89528,
+      0.91096
+    ],
+    "f1_per_class": [
+      0.9023544589582325,
+      0.9038736307350373
+    ],
+    "confusion_matrix": [
+      [
+        11191,
+        1309
+      ],
+      [
+        1113,
+        11387
+      ]
+    ],
+    "n_samples": 25000
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.4352767176628113,
+      "val_loss": 0.2539302706718445,
+      "val_acc": 0.903
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.16525525147914885,
+      "val_loss": 0.21918390691280365,
+      "val_acc": 0.9108
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.08419113216400147,
+      "val_loss": 0.22209703922271729,
+      "val_acc": 0.9102
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.042541950500011444,
+      "val_loss": 0.23592758178710938,
+      "val_acc": 0.9042
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.022223287025094032,
+      "val_loss": 0.2530977427959442,
+      "val_acc": 0.9022
+    }
+  ]
+}
