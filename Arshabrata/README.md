@@ -44,6 +44,3 @@ python src/run_all.py --all
 
 Run only one model with `--model mlp`, `--model textcnn`, `--model bilstm`, or `--model distilbert`. Results are written under `results/final/`; every score is measured during that run.
 
-## Integrity note
-
-The smoke-test result is diagnostic, not the report's final metric. Do not alter measured values. The later full run must use the specified 20,000 training, 5,000 validation, and official 25,000-review test split and its actual metrics.
