@@ -1,0 +1,69 @@
+{
+  "seed": 42,
+  "conditions": {
+    "synonym_0.05": {
+      "n": 25000,
+      "changed_reviews": 24985,
+      "requested_rate": 0.05,
+      "realized_word_edit_rate": 0.04787564156291219,
+      "fingerprint": "90782546af7160b3"
+    },
+    "synonym_0.1": {
+      "n": 25000,
+      "changed_reviews": 24996,
+      "requested_rate": 0.1,
+      "realized_word_edit_rate": 0.09798818732083256,
+      "fingerprint": "4da85c37c5a85629"
+    },
+    "synonym_0.2": {
+      "n": 25000,
+      "changed_reviews": 25000,
+      "requested_rate": 0.2,
+      "realized_word_edit_rate": 0.1982005252674253,
+      "fingerprint": "6e1d845304c724ed"
+    },
+    "typo_0.05": {
+      "n": 25000,
+      "changed_reviews": 24985,
+      "requested_rate": 0.05,
+      "realized_word_edit_rate": 0.04787564156291219,
+      "fingerprint": "dc62cef5882b1296"
+    },
+    "typo_0.1": {
+      "n": 25000,
+      "changed_reviews": 24996,
+      "requested_rate": 0.1,
+      "realized_word_edit_rate": 0.09798818732083256,
+      "fingerprint": "b28411e21a9e81b1"
+    },
+    "typo_0.2": {
+      "n": 25000,
+      "changed_reviews": 25000,
+      "requested_rate": 0.2,
+      "realized_word_edit_rate": 0.1982005252674253,
+      "fingerprint": "d865e280df8ce12b"
+    },
+    "deletion_0.05": {
+      "n": 25000,
+      "changed_reviews": 24985,
+      "requested_rate": 0.05,
+      "realized_word_edit_rate": 0.04787564156291219,
+      "fingerprint": "444f3e634b391890"
+    },
+    "deletion_0.1": {
+      "n": 25000,
+      "changed_reviews": 24996,
+      "requested_rate": 0.1,
+      "realized_word_edit_rate": 0.09798818732083256,
+      "fingerprint": "80e3d20436b3469a"
+    },
+    "deletion_0.2": {
+      "n": 25000,
+      "changed_reviews": 25000,
+      "requested_rate": 0.2,
+      "realized_word_edit_rate": 0.1982005252674253,
+      "fingerprint": "d128f0c5aec160c2"
+    }
+  },
+  "method": "nlpaug WordNet synonym candidates with deterministic custom edit budgets; custom typos/deletion. Not contextual semantic validation"
+}

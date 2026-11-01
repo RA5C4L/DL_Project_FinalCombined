@@ -1,0 +1,27 @@
+{
+  "seed": 42,
+  "split_hash": "b2aff130e76f84ad088d273a2d4ed30cc7477ae7b9a52fc51f94d428a1667265",
+  "dataset_revisions": {
+    "stanfordnlp/imdb": "e6281661ce1c48d982bc483cf8a173c1bbeb5d31",
+    "fancyzhx/amazon_polarity": "9d9c45c18f8c3cf1b23a3c27917b60cbf28f3289"
+  },
+  "dataset_fingerprints": {
+    "train": "0cd79f2a9c75ac80",
+    "validation": "d9f925d369eac239",
+    "test": "c61ab728c1c2a5d4",
+    "amazon": "018cbb1925066425"
+  },
+  "counts": {
+    "train": 20000,
+    "validation": 5000,
+    "test": 25000,
+    "amazon": 25000
+  },
+  "labels": {
+    "0": "negative",
+    "1": "positive"
+  },
+  "amazon_input": "title + space + content",
+  "amazon_sample_hash": "2ba2eccee36c162e423180dce98b2ec91d75f0f73ec226877d58c4c57f76c130",
+  "split_origin": "Generated locally; share with team before comparing models"
+}
