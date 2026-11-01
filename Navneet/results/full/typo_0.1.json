@@ -1,0 +1,23 @@
+{
+  "model": "DistilBERT",
+  "condition": "typo_0.1",
+  "accuracy": 0.8824,
+  "precision_macro": 0.8864522454977505,
+  "recall_macro": 0.8824000000000001,
+  "f1_macro": 0.8820909083908922,
+  "confusion_matrix": [
+    [
+      11670,
+      830
+    ],
+    [
+      2110,
+      10390
+    ]
+  ],
+  "n": 25000,
+  "accuracy_drop_pp": 2.724000000000004,
+  "prediction_flip_rate": 0.06516,
+  "failure_rate_on_clean_correct": 0.05078932324875775,
+  "changed_review_fraction": 0.99984
+}

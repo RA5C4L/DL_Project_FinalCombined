@@ -1,0 +1,20 @@
+{
+  "model": "DistilBERT",
+  "condition": "amazon",
+  "accuracy": 0.91708,
+  "precision_macro": 0.9181934651926834,
+  "recall_macro": 0.91708,
+  "f1_macro": 0.9170247683668157,
+  "confusion_matrix": [
+    [
+      11141,
+      1359
+    ],
+    [
+      714,
+      11786
+    ]
+  ],
+  "n": 25000,
+  "accuracy_drop_pp": -0.7440000000000002
+}

@@ -1,0 +1,20 @@
+{
+  "model": "DistilBERT",
+  "condition": "clean",
+  "accuracy": 0.90964,
+  "precision_macro": 0.9097013804775398,
+  "recall_macro": 0.90964,
+  "f1_macro": 0.9096366154936513,
+  "confusion_matrix": [
+    [
+      11447,
+      1053
+    ],
+    [
+      1206,
+      11294
+    ]
+  ],
+  "n": 25000,
+  "accuracy_drop_pp": 0.0
+}

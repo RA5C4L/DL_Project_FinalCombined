@@ -1,0 +1,184 @@
+{
+  "experiment": {
+    "config": {
+      "seed": 42,
+      "model": "distilbert/distilbert-base-uncased",
+      "max_length": 256,
+      "epochs": 2,
+      "learning_rate": 2e-05,
+      "train_batch_size": 8,
+      "eval_batch_size": 32,
+      "gradient_accumulation_steps": 2,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "amazon_test_size": 25000,
+      "perturbation_rates": [
+        0.05,
+        0.1,
+        0.2
+      ]
+    },
+    "smoke_only": false,
+    "data_manifest": {
+      "seed": 42,
+      "split_hash": "b2aff130e76f84ad088d273a2d4ed30cc7477ae7b9a52fc51f94d428a1667265",
+      "dataset_revisions": {
+        "stanfordnlp/imdb": "e6281661ce1c48d982bc483cf8a173c1bbeb5d31",
+        "fancyzhx/amazon_polarity": "9d9c45c18f8c3cf1b23a3c27917b60cbf28f3289"
+      },
+      "dataset_fingerprints": {
+        "train": "0cd79f2a9c75ac80",
+        "validation": "d9f925d369eac239",
+        "test": "c61ab728c1c2a5d4",
+        "amazon": "018cbb1925066425"
+      },
+      "counts": {
+        "train": 20000,
+        "validation": 5000,
+        "test": 25000,
+        "amazon": 25000
+      },
+      "labels": {
+        "0": "negative",
+        "1": "positive"
+      },
+      "amazon_input": "title + space + content",
+      "amazon_sample_hash": "2ba2eccee36c162e423180dce98b2ec91d75f0f73ec226877d58c4c57f76c130",
+      "split_origin": "Generated locally; share with team before comparing models"
+    },
+    "training_metrics": {
+      "train_runtime": 249.1701,
+      "train_samples_per_second": 160.533,
+      "train_steps_per_second": 10.033,
+      "train_loss": 0.25087498207092285,
+      "epoch": 2.0
+    },
+    "validation_metrics": {
+      "eval_loss": 0.2270255833864212,
+      "eval_accuracy": 0.913,
+      "eval_precision_macro": 0.9131587190535115,
+      "eval_recall_macro": 0.913,
+      "eval_f1_macro": 0.9129916437174626,
+      "eval_runtime": 6.9969,
+      "eval_samples_per_second": 714.606,
+      "eval_steps_per_second": 22.439,
+      "epoch": 2.0
+    },
+    "best_checkpoint": "C:\\Users\\Sachith\\Documents\\Codex\\2026-10-30\\cr\\outputs\\Navneet_DL_Project\\runs\\distilbert\\checkpoint-1250",
+    "base_model_commit": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU"
+  },
+  "data_manifest": {
+    "seed": 42,
+    "split_hash": "b2aff130e76f84ad088d273a2d4ed30cc7477ae7b9a52fc51f94d428a1667265",
+    "dataset_revisions": {
+      "stanfordnlp/imdb": "e6281661ce1c48d982bc483cf8a173c1bbeb5d31",
+      "fancyzhx/amazon_polarity": "9d9c45c18f8c3cf1b23a3c27917b60cbf28f3289"
+    },
+    "dataset_fingerprints": {
+      "train": "0cd79f2a9c75ac80",
+      "validation": "d9f925d369eac239",
+      "test": "c61ab728c1c2a5d4",
+      "amazon": "018cbb1925066425"
+    },
+    "counts": {
+      "train": 20000,
+      "validation": 5000,
+      "test": 25000,
+      "amazon": 25000
+    },
+    "labels": {
+      "0": "negative",
+      "1": "positive"
+    },
+    "amazon_input": "title + space + content",
+    "amazon_sample_hash": "2ba2eccee36c162e423180dce98b2ec91d75f0f73ec226877d58c4c57f76c130",
+    "split_origin": "Generated locally; share with team before comparing models"
+  },
+  "experiment_hash": "e93a1c2acf61433f4f74cbd7d840e6de687393ee4c975eb96302750f156b7b8d",
+  "conditions": [
+    "clean",
+    "amazon",
+    "synonym_0.05",
+    "synonym_0.1",
+    "synonym_0.2",
+    "typo_0.05",
+    "typo_0.1",
+    "typo_0.2",
+    "deletion_0.05",
+    "deletion_0.1",
+    "deletion_0.2"
+  ],
+  "perturbation_manifest": {
+    "seed": 42,
+    "conditions": {
+      "synonym_0.05": {
+        "n": 25000,
+        "changed_reviews": 24985,
+        "requested_rate": 0.05,
+        "realized_word_edit_rate": 0.04787564156291219,
+        "fingerprint": "90782546af7160b3"
+      },
+      "synonym_0.1": {
+        "n": 25000,
+        "changed_reviews": 24996,
+        "requested_rate": 0.1,
+        "realized_word_edit_rate": 0.09798818732083256,
+        "fingerprint": "4da85c37c5a85629"
+      },
+      "synonym_0.2": {
+        "n": 25000,
+        "changed_reviews": 25000,
+        "requested_rate": 0.2,
+        "realized_word_edit_rate": 0.1982005252674253,
+        "fingerprint": "6e1d845304c724ed"
+      },
+      "typo_0.05": {
+        "n": 25000,
+        "changed_reviews": 24985,
+        "requested_rate": 0.05,
+        "realized_word_edit_rate": 0.04787564156291219,
+        "fingerprint": "dc62cef5882b1296"
+      },
+      "typo_0.1": {
+        "n": 25000,
+        "changed_reviews": 24996,
+        "requested_rate": 0.1,
+        "realized_word_edit_rate": 0.09798818732083256,
+        "fingerprint": "b28411e21a9e81b1"
+      },
+      "typo_0.2": {
+        "n": 25000,
+        "changed_reviews": 25000,
+        "requested_rate": 0.2,
+        "realized_word_edit_rate": 0.1982005252674253,
+        "fingerprint": "d865e280df8ce12b"
+      },
+      "deletion_0.05": {
+        "n": 25000,
+        "changed_reviews": 24985,
+        "requested_rate": 0.05,
+        "realized_word_edit_rate": 0.04787564156291219,
+        "fingerprint": "444f3e634b391890"
+      },
+      "deletion_0.1": {
+        "n": 25000,
+        "changed_reviews": 24996,
+        "requested_rate": 0.1,
+        "realized_word_edit_rate": 0.09798818732083256,
+        "fingerprint": "80e3d20436b3469a"
+      },
+      "deletion_0.2": {
+        "n": 25000,
+        "changed_reviews": 25000,
+        "requested_rate": 0.2,
+        "realized_word_edit_rate": 0.1982005252674253,
+        "fingerprint": "d128f0c5aec160c2"
+      }
+    },
+    "method": "nlpaug WordNet synonym candidates with deterministic custom edit budgets; custom typos/deletion. Not contextual semantic validation"
+  },
+  "inference_precision": "CUDA float16 autocast"
+}
