@@ -254,7 +254,15 @@ def main():
     (OUT / "vocabulary.json").write_text(json.dumps(vocabulary), encoding="utf-8")
     train_x, val_x, test_x = (encode_texts(items, vocabulary, MAX_LENGTH) for items in (train_texts, val_texts, test_texts))
     amazon_texts, amazon_y = amazon_test()
-    rng = random.Random(SEED); robustness_texts, robustness_y = test_texts[:1_000], test_y[:1_000]
+    # The Hugging Face IMDB test split is label-ordered. Do not take its first
+    # 1,000 rows: that would contain only negative reviews and make robustness
+    # metrics unrepresentative. Use one fixed, balanced held-out sample.
+    robustness_indices, _ = train_test_split(
+        np.arange(len(test_y)), train_size=1_000, random_state=SEED, stratify=test_y
+    )
+    robustness_texts = [test_texts[i] for i in robustness_indices]
+    robustness_y = test_y[robustness_indices]
+    rng = random.Random(SEED)
     attacks = {"character_noise": [character_noise(t, rng) for t in robustness_texts],
                "synonym_substitution": [synonym_substitution(t, rng) for t in robustness_texts],
                "random_word_deletion": [random_deletion(t, rng) for t in robustness_texts]}
@@ -276,11 +284,13 @@ def main():
             model, tokenizer = train_bert(train_texts, train_y, val_texts, val_y, device)
             predict = lambda items: predict_bert(model, tokenizer, items, device)
         clean = predict(test_texts); clean_metrics = metrics(test_y, clean); write_evidence(name, test_texts, test_y, clean)
+        robustness_clean_accuracy = metrics(robustness_y, predict(robustness_texts))["accuracy"]
         row = {"model": name, **clean_metrics, "cross_domain_accuracy": metrics(amazon_y, predict(amazon_texts))["accuracy"],
+               "robustness_clean_accuracy": robustness_clean_accuracy,
                "runtime_minutes": round((time.time() - started) / 60, 2)}
         for attack, altered in attacks.items():
             row[f"{attack}_accuracy"] = metrics(robustness_y, predict(altered))["accuracy"]
-            row[f"{attack}_drop"] = clean_metrics["accuracy"] - row[f"{attack}_accuracy"]
+            row[f"{attack}_drop"] = robustness_clean_accuracy - row[f"{attack}_accuracy"]
         comparison.append(row); print(json.dumps(row, indent=2), flush=True)
     write_csv(OUT / "final_comparison.csv", comparison)
     (OUT / "run_metadata.json").write_text(json.dumps({"seed": SEED, "device": str(device), "models": list(selected),
